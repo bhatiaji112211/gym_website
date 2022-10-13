@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* multi-time use components */
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* header */
+
+.full-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,0.700717787114846) 0%, rgba(0,0,0,0.700717787114846) 100%),url(../img/banner.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+}
+
+/* navigation */
+header .navbar{
+    width: 100%;
+    background-attachment: fixed;
+    padding: 1rem;
+}
+
+header .navbar .logo h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+header .navbar .logo h1 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header .navbar .logo h1 a em{
+    color: red;
+    text-transform: lowercase;
+}
+
+header .navbar #menu {
+    list-style: none;
+    padding-top: 0.2rem;
+}
+
+header .navbar #menu li{
+    margin: 0 1rem;
+}
+
+header .navbar #menu li a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .navbar #menu li a:hover{
+    font-size: 1.25rem;
+    color: red;
+    transition: all ease-in .3s;
+}
+
+/* header .navbar ul li a .active{
+    color: red !important;
+} */
+
+
+header .navbar .login .log_in_btn{
+    width: 4.5rem;
+    height: 1.8rem;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 1.3rem;
+    text-transform: uppercase;
+}
+
+header .navbar .login .log_in_btn:hover{
+    color: red;
+    border: 1px solid red;
+    transition: all ease-in .3s;
+}
+
+header .navbar .login .create_btn{
+    width: 10.5rem;
+    height: 1.8rem;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+header .navbar .login .create_btn:hover{
+    color: red;
+    border: 1px solid red;
+    transition: all ease-in .3s;
+}
+
+header .navbar #nav-toggler{
+    display: none;
+}
+
+/*  */
+
+ 
+/* banner text */
+header .container .banner-text{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 13rem;
+}
+
+header .container .banner-text h3{
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .container .banner-text h1{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+header .container .banner-text .join_btn{
+    width: 10rem;
+    height: 2rem;
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+header .container .banner-text .join_btn:hover{
+    color: red;
+    border: 1px solid red;
+}
+
+/* navigation section */
+
+@media(max-width:1100px){
+    header .navbar .logo h1{
+        font-size: 1.8rem;
+    }
+
+    header .navbar #menu {
+        padding-top: 0.280rem;
+    }
+
+    header .navbar #menu li{
+        margin: 0 0.8rem;
+    }
+
+    header .navbar #menu li a{
+        font-size: 1.0125rem;
+    }
+
+    header .navbar .login .log_in_btn{
+        width: 4.2rem;
+        font-size: 0.8rem;
+        margin-right: 1.1rem;
+    }
+    header .navbar .login .create_btn{
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:997px){
+    header .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .navbar #menu{
+        display: none;
+        position: absolute;
+        top: 3.54rem;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    
+    header .navbar #menu li{
+        padding-bottom: 1rem;
+    }
+
+    header .navbar #menu li a{
+        color: #000;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    header .navbar #nav-toggler{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        background: none;
+        border: 1px solid #fff;
+        /* border-radius: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    header .navbar #nav-toggler span{
+        position: absolute;
+        width: 22px;
+        height: 4px;
+        background: #fff;
+        border-radius: 4px;
+        transition: 0.5s;
+    }
+    
+    header .navbar #nav-toggler span:nth-child(1){
+        transform: translateY(-15px);
+        width: 12px;
+        top: 20px;
+        left: 5px;
+    }
+    
+    header .navbar #nav-toggler.active_toggle span:nth-child(1){
+        width: 30px;
+        transform: translateY(-2px) rotate(45deg);
+        top: 16px;
+        left: 2px;
+    }
+    
+    header .navbar #nav-toggler span:nth-child(2){
+        transform: translateY(15px);
+        width: 8px;
+        top: 11px;
+        left: 7px;
+    }
+    
+    header .navbar #nav-toggler.active_toggle span:nth-child(2){
+        width: 30px;
+        transform: translateY(-2px) rotate(315deg);
+        top: 16px;
+        left: 2px;
+    }
+    
+    header .navbar .active_toggle span:nth-child(3){
+        transform: translateX(60px);
+    }
+
+    header .navbar .login{
+        margin-right: 4rem;
+    }
+}
+
+@media(max-width:692px){
+    header .container .banner-text{
+        margin-top: 10rem;
+        width: 80%;
+    }
+    header .container .banner-text h3{
+        font-size: 1.5rem;
+    }
+    header .container .banner-text h1{
+        font-size: 3.2rem;
+    }
+    header .container .banner-text .join_btn{
+        width: 9.5rem;
+        font-size: 1.05rem;
+    }
+}
+
+@media(max-width:470px){
+    header .navbar #menu{
+        top: 3.37rem;
+    }
+    header .navbar #nav-toggler{
+        width: 35px;
+        height: 40px;
+    }
+    header .navbar #nav-toggler span{
+        width: 25px;
+        left: 4px;
+    }
+    header .navbar #nav-toggler span:nth-child(1){
+        width: 12px;
+        top: 20px;
+        left: 4px;
+    }
+    header .navbar #nav-toggler span:nth-child(2){
+        width: 12px;
+        top: 15px;
+        left: 4px;
+    }
+    header .navbar #nav-toggler.active_toggle span:nth-child(1){
+        left: 0;
+        top: 20px;
+    }
+    header .navbar #nav-toggler.active_toggle span:nth-child(2){
+        left: 0;
+        top: 20px;
+    }
+    header .navbar .login .log_in_btn{
+        width: 4rem;
+        font-size: 0.7rem;
+        margin-right: 0.8rem;
+    }
+    header .navbar .login .create_btn{
+        width: 8rem;
+        font-size: 0.7rem;
+    }
+    header .navbar .login{
+        margin-right: 2rem;
+    }
+    header .container .banner-text{
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:376px){
+    header .navbar{
+        padding: 0.5rem;
+    }
+    header .navbar .logo h1{
+        font-size: 1.5rem;
+    }
+    header .navbar #nav-toggler{
+        width: 30px;
+        height: 30px;
+        top: 8px;
+    }
+    header .navbar #nav-toggler span{
+        width: 18px;
+        left: 4px;
+    }
+    header .navbar #nav-toggler span:nth-child(1){
+        width: 11px;
+        top: 18px;
+    }
+    header .navbar #nav-toggler span:nth-child(2){
+        width: 8px;
+        top: 6px;
+    }
+    header .navbar #nav-toggler.active_toggle span:nth-child(1){
+        top: 15px;
+        width: 25px;
+        left: 2px;
+    }
+    header .navbar #nav-toggler.active_toggle span:nth-child(2){
+        width: 25px;
+        top: 15px;
+        left: 2px;
+    }
+    header .navbar .login .log_in_btn{
+        width: 3.5rem;
+        font-size: 0.6rem;
+        margin-right: 0.7rem;
+    }
+    header .navbar .login .create_btn{
+        width: 7rem;
+        font-size: 0.6rem;
+    }
+    header .navbar .login{
+        margin-right: 1.5rem;
+    }
+    header .navbar .login{
+        margin-right: 2rem;
+    }
+}
+
+.body_building{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.body_building .body_building_section{
+    width: 50%;
+    height: 40vh;
+}
+.body_building .body_building_section img{
+    position: absolute;
+    top: 60px;
+    width: 70px;
+    height: 70px;
+}
+.body_building .body_building_section h3{
+    font-size: 2rem;
+    
+}
+.body_building .muscle_building_section{
+    width: 50%;
+    height: 40vh;
+}
+.body_building .muscle_building_section img{
+    position: absolute;
+    top: 60px;
+    width: 70px;
+    height: 70px;
+}
+.body_building .muscle_building_section h3{
+    font-size: 2rem;    
+    
+}
