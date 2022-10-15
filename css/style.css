@@ -3,32 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html{
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
-
 /* multi-time use components */
 .flex-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
 .container{
     width: 80%;
     margin: 0 auto;
 }
-
 button{
     font-family: 'Roboto', sans-serif;
 }
-
-
+.b_btn{
+    width: 170px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    position:absolute;
+    top: 320px;
+}
+.b_btn:hover{
+    color: #000;
+    background-color: #fff;
+}
 /* header */
-
 .full-container{
     width: 100%;
     height: 100vh;
@@ -40,39 +49,32 @@ button{
 header{
     width: 100%;
 }
-
 /* navigation */
 header .navbar{
     width: 100%;
     background-attachment: fixed;
     padding: 1rem;
 }
-
 header .navbar .logo h1{
     font-size: 2rem;
     font-weight: 500;
 }
-
 header .navbar .logo h1 a{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
 }
-
 header .navbar .logo h1 a em{
     color: red;
     text-transform: lowercase;
 }
-
 header .navbar #menu {
     list-style: none;
     padding-top: 0.2rem;
 }
-
 header .navbar #menu li{
     margin: 0 1rem;
 }
-
 header .navbar #menu li a{
     color: #fff;
     font-size: 1.2rem;
@@ -80,18 +82,14 @@ header .navbar #menu li a{
     text-decoration: none;
     text-transform: uppercase;
 }
-
 header .navbar #menu li a:hover{
     font-size: 1.25rem;
     color: red;
     transition: all ease-in .3s;
 }
-
 /* header .navbar ul li a .active{
     color: red !important;
 } */
-
-
 header .navbar .login .log_in_btn{
     width: 4.5rem;
     height: 1.8rem;
@@ -101,13 +99,11 @@ header .navbar .login .log_in_btn{
     margin-right: 1.3rem;
     text-transform: uppercase;
 }
-
 header .navbar .login .log_in_btn:hover{
     color: red;
     border: 1px solid red;
     transition: all ease-in .3s;
 }
-
 header .navbar .login .create_btn{
     width: 10.5rem;
     height: 1.8rem;
@@ -116,20 +112,14 @@ header .navbar .login .create_btn{
     border: 1px solid #fff;
     text-transform: uppercase;
 }
-
 header .navbar .login .create_btn:hover{
     color: red;
     border: 1px solid red;
     transition: all ease-in .3s;
 }
-
 header .navbar #nav-toggler{
     display: none;
 }
-
-/*  */
-
- 
 /* banner text */
 header .container .banner-text{
     width: 60%;
@@ -137,7 +127,6 @@ header .container .banner-text{
     text-align: center;
     margin-top: 13rem;
 }
-
 header .container .banner-text h3{
     color: red;
     font-size: 1.8rem;
@@ -146,7 +135,6 @@ header .container .banner-text h3{
     margin-bottom: 2rem;
     font-family: 'Raleway', sans-serif;
 }
-
 header .container .banner-text h1{
     color: #fff;
     font-size: 3.5rem;
@@ -155,7 +143,6 @@ header .container .banner-text h1{
     margin-bottom: 2rem;
     font-family: 'Playfair Display', serif;
 }
-
 header .container .banner-text .join_btn{
     width: 10rem;
     height: 2rem;
@@ -165,14 +152,11 @@ header .container .banner-text .join_btn{
     text-transform: capitalize;
     font-size: 1.1rem;
 }
-
 header .container .banner-text .join_btn:hover{
     color: red;
     border: 1px solid red;
 }
-
 /* navigation section */
-
 @media(max-width:1100px){
     header .navbar .logo h1{
         font-size: 1.8rem;
@@ -199,8 +183,13 @@ header .container .banner-text .join_btn:hover{
         width: 10rem;
         font-size: 0.8rem;
     }
+    header .container .banner-text{
+        width: 80%;
+    }
+    header .container .banner-text h1{
+        font-size: 3.4rem;
+    }
 }
-
 @media(max-width:997px){
     header .navbar{
         display: flex;
@@ -286,8 +275,13 @@ header .container .banner-text .join_btn:hover{
     header .navbar .login{
         margin-right: 4rem;
     }
+    header .container .banner-text{
+        width: 100%;
+    }
+    header .container .banner-text h1{
+        font-size: 2.9rem;
+    }
 }
-
 @media(max-width:692px){
     header .container .banner-text{
         margin-top: 10rem;
@@ -303,8 +297,14 @@ header .container .banner-text .join_btn:hover{
         width: 9.5rem;
         font-size: 1.05rem;
     }
+    header .container .banner-text{
+        width: 100%;
+        margin-top: 18rem;
+    }
+    header .container .banner-text h1{
+        font-size: 2.5rem;
+    }
 }
-
 @media(max-width:470px){
     header .navbar #menu{
         top: 3.37rem;
@@ -348,12 +348,11 @@ header .container .banner-text .join_btn:hover{
         margin-right: 2rem;
     }
     header .container .banner-text{
-        margin-top: 8rem;
+        margin-top: 15rem;
         width: 100%;
     }
 
 }
-
 @media(max-width:376px){
     header .navbar{
         padding: 0.5rem;
@@ -404,7 +403,6 @@ header .container .banner-text .join_btn:hover{
         margin-right: 2rem;
     }
 }
-
 .body_building{
     width: 80%;
     margin: 0 auto;
@@ -412,29 +410,188 @@ header .container .banner-text .join_btn:hover{
 }
 .body_building .body_building_section{
     width: 50%;
-    height: 40vh;
+    height: 450px;
+    background: #e31e1e;
+    padding: 5rem 0;
+    position: absolute;    
+    top: -80px;
+    left: 0;
+    overflow: hidden;
 }
 .body_building .body_building_section img{
     position: absolute;
-    top: 60px;
-    width: 70px;
-    height: 70px;
+    top: 281px;
+    left: 0px;
+    width: 165px;
+    height: 170px;
+    z-index: 0;
 }
 .body_building .body_building_section h3{
-    font-size: 2rem;
-    
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+.body_building .body_building_section p{
+    text-align: right;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #fff;
+    position: absolute;
+    z-index: 9999;
+}
+.body_building .body_building_section .b_btn{
+    right: 30px;
 }
 .body_building .muscle_building_section{
     width: 50%;
-    height: 40vh;
+    height: 450px;
+    background: #111;
+    padding: 5rem 0;
+    position: absolute;    
+    top: -80px;
+    right: 0;
 }
 .body_building .muscle_building_section img{
     position: absolute;
-    top: 60px;
-    width: 70px;
-    height: 70px;
+    top: 282px;
+    right: 0px;
+    width: 168px;
+    height: 165px;
+    z-index: 0;
 }
 .body_building .muscle_building_section h3{
-    font-size: 2rem;    
-    
+    font-size: 3rem;    
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-weight: 600;
 }
+.body_building .muscle_building_section p{
+    text-align: left;
+    padding-right: 5rem;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #fff;
+    position: absolute;
+    z-index: 9999;
+}
+.body_building .muscle_building_section .b_btn{
+    left: 30px;
+}
+@media(max-width:1100px){
+    .body_building .body_building_section p{
+        padding-left: 4rem;
+    }
+    .body_building .muscle_building_section p{
+        padding-right: 4rem;
+    }
+    .b_btn{
+        top: 345px;
+    }
+}
+@media(max-width:992px){
+    .body_building .body_building_section{
+        top: 70px;
+    }
+    .body_building .body_building_section h3{
+        font-size: 2.5rem;
+    }
+    .body_building .body_building_section p{
+        font-size: 1.1rem;
+        line-height: 22px;
+    }
+    .body_building .muscle_building_section{
+        top: 70px;
+    }
+    .body_building .muscle_building_section h3{
+        font-size: 2.5rem;
+    }
+    .body_building .muscle_building_section p{
+        font-size: 1.1rem;
+        line-height: 22px;
+    }
+}
+
+@media(max-width:818px){
+    .body_building .body_building_section{
+        width: 100%;
+    }
+    .body_building .body_building_section h3{
+        font-size: 3rem;
+    }
+    .body_building .body_building_section p{
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .body_building .muscle_building_section{
+        width: 100%;
+        top: 520px;
+    }
+    .body_building .muscle_building_section h3{
+        font-size: 3rem;
+    }
+    .body_building .muscle_building_section p{
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .b_btn{
+        top: 300px;
+    }
+}
+
+@media(max-width:692px){
+    .body_building .body_building_section h3 , .body_building .muscle_building_section h3{
+        font-size: 2.5rem;
+    }
+    .body_building .body_building_section p , .body_building .muscle_building_section p{
+        font-size: 1.1rem;
+        line-height: 23px;
+    }
+    .b_btn{
+        top: 330px;
+    }
+}
+
+@media(max-width:470px){
+    .b_btn{
+        top: 360px;
+    }
+}
+@media(max-width:396px){
+    .body_building .body_building_section h3 , .body_building .muscle_building_section h3{
+        font-size: 2rem;
+    }
+    .body_building .body_building_section p , .body_building .muscle_building_section p{
+        font-size: 1rem;
+        line-height: 23px;
+    }
+    .b_btn{
+        top: 380px;
+    }
+}
+
+/* about */
+/* #about{
+    width: 100%;
+    margin-top: 500px;
+    left: 0;
+}
+
+#about #myvideo{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-height: 100%;
+
+} */
